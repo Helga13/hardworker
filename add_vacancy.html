@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Добавить объявление</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!--        <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+<!--        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=cyrillic,latin' rel='stylesheet'>-->
+
+        <link rel="stylesheet" href="public/select2/dist/css/select2.css">
+        <link rel="stylesheet" href="public/jquery-simple-slider/css/simple-slider.css">
+        <link rel="stylesheet" href="public/jquery-ui-datapicker/jquery-ui.css">
+        <link rel="stylesheet" href="public/jquery-ui-datapicker/jquery-ui.theme.css">
+        <link rel="stylesheet" href="public/lightbox/dist/ekko-lightbox.css">
+        <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="public/stylesheets/style.css">
+
+        <script src="public/javascripts/jquery-1.11.2.min.js"></script>
+        <script src="public/select2/dist/js/select2.js"></script>
+        <script src="public/jquery-ui-datapicker/jquery-ui.js"></script>  
+        <script src="public/jquery-simple-slider/js/simple-slider.js"></script>
+        <script src="public/lightbox/dist/ekko-lightbox.js"></script>
+        <script src="public/jquery-validation-1.13.1/dist/jquery.validate.js"></script>
+        <script src="public/jquery-validation-1.13.1/dist/additional-methods.js"></script>
+        <script src="public/bootstrap/js/bootstrap.min.js"></script>
+        <script src="public/javascripts/index.js"></script>
+
+    </head>
+
+
+    <body>
+        <div class="header_bg">
+            <div class="container header">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 column header">
+<div class="before_header_all">
+                            <div class="before_header login_btn">
+                                <a class="login" href="#" data-toggle="modal" data-target="#myModal"><img src="public/img/login_img.png" alt="login">Войти</a>
+                            </div>
+                            <div class="before_header get_pticket_btn">
+                                <a href="registration.html" class="pticket"><img src="public/img/pticket_img.png" alt="get_pticket">Получить партбилет</a>
+                            </div>    
+                        </div>
+
+                        <nav class="nav navbar navbar-default" role="navigation">
+                            <!--                            <div class="container-fluid">-->
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="public/img/logo.png" alt="logo">
+                                    <h1>Трудоголик</h1>
+                                </a>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav nav-pills nav-justified">
+                                    <li><a href="#">Дать объявление</a></li>
+                                    <li><a href="#">Найти работу</a></li>                    
+                                    <li><a href="#">Как это работает</a></li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                            <!--                            </div>-->
+                        </nav>              
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--            Content block-->
+
+        <div class="container">
+            <div class="row clearfix">
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 column content_block">
+                    <h4>ДОБАВИТЬ ОБЪЯВЛЕНИE</h4> 
+                    <p>Здравствуйте!</p>
+                    <p><a href="#">Зарегестрируйтесь</a>, или вам придется зарегистрироваться после добавления объявления</p> 
+                    <div class="project_block">
+                        <form class="form-horizontal form_vacancy" role="form">
+                            <div class="form-group form_add_vacancy">
+                                <label for="input_name_of_project" class="col-xs-2 col-sm-2 control-label">Название проекта:<span>*</span></label>
+                                <div class="col-xs-10 col-sm-10 select_add_input">
+                                    <input type="text" class="form-control required" id="input_name_of_project" name="project_name">
+                                </div>
+                            </div>
+                            <div class="form-group form_add_vacancy">
+                                <label for="input_category_of_project" class="col-xs-2 col-sm-2 control-label">Категория:<span>*</span></label>
+                                <div class="col-xs-10 col-sm-10 select_add_input">
+                                    <select class="js-example-placeholder-single_reg required" id="input_category_of_project" size="2" name="categories">
+                                        <option value="ph">Физический труд</option>
+                                        <option value="cm">Компьютерные услуги</option>
+                                        <option value="ad">Образовательные услуги</option>
+                                        <option value="or">Изготовление под заказ</option>
+                                        <option value="ct">Вне категории</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group form_add_vacancy">
+                                <label for="input_subcategory_of_project" class="col-xs-2 col-sm-2 control-label">Подкатегория:</label>
+                                <div class="col-xs-10 col-sm-10 select_add_input">
+                                    <select class="js-example-placeholder-single_reg" id="input_subcategory_of_project" size="2">
+                                        <option>Cat1</option>
+                                        <option>Cat2</option>
+                                        <option>Cat3</option>
+                                        <option>Cat4</option>
+                                        <option>Cat5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group form_add_vacancy">
+                                <label for="input_budget" class="col-xs-2 col-sm-2 control-label">Бюджет заказа:</label>
+                                <div class="col-xs-10 col-sm-10 input_budget">
+                                    <input type="text" class="form-control" id="input_budget">
+                                </div>
+                                <label for="input_budget" class="col-sm-2 control-label input_budget_after">тысяч рублей</label>
+                            </div>
+
+                            <div class="form-group form_add_vacancy">
+                                <label for="input_payment_options" class="col-xs-2 col-sm-2 control-label">Вариант оплаты:</label>
+                                <div class="col-xs-10 col-sm-10 select_add_input">
+                                    <select class="js-example-placeholder-single_reg" id="input_payment_options" size="2">
+                                        <option>Var1</option>
+                                        <option>Var2</option>
+                                        <option>Var3</option>
+                                        <option>Var4</option>
+                                        <option>Var5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group form_add_vacancy">
+                                <label for="input_payment_way" class="col-xs-2 col-sm-2 control-label">Способ оплаты:</label>
+                                <div class="col-xs-10 col-sm-10 select_add_input">
+                                    <select class="js-example-placeholder-single_reg" id="input_payment_way" size="2">
+                                        <option>Way1</option>
+                                        <option>Way2</option>
+                                        <option>Way3</option>
+                                        <option>Way4</option>
+                                        <option>Way5</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group form_add_vacancy">
+                                <label for="input_description_of_project" class="col-xs-2 col-sm-2 control-label">Описание проекта:</label>
+                                <div class="col-xs-10 col-sm-10 select_add_input">
+                                    <textarea class="form-control" id="input_description_of_project" rows="4"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group form_add_vacancy">
+                                <label for="input_requirements_to_project" class="col-xs-2 col-sm-2 control-label">Обязательные требования:</label>
+                                <div class="col-xs-10 col-sm-10 select_add_input">
+                                    <textarea class="form-control" id="input_requirements_to_project" rows="4"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group form_add_vacancy">
+                                <label for="date" class="col-xs-2 col-sm-2 control-label">Дата выполнения</label>
+                                <div class="col-xs-10 col-sm-10 select_add">
+                                    <input name="date" id="date" readonly/>
+                                </div>
+                            </div>
+
+                            <div class="form-group form_add_vacancy input_files">
+                                <label for="InputFile">Фото места: (Формат PNG, JPEG)</label>
+                                <div class="col-xs-10 col-sm-10 select_add">
+                                    <input type="file" id="InputFile" accept="image/jpeg,image/png">
+                                    <button type="button" class="btn btn-default delete_btn">Удалить</button>
+                                </div>
+                                <div class="col-xs-10 col-sm-10 select_add">
+                                    <input type="file" id="InputFile1" accept="image/jpeg,image/png">
+                                    <button type="button" class="btn btn-default delete_btn">Удалить</button>
+                                    <button type="button" class="btn btn-default add_btn">Добавить</button>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group form_add_vacancy submit_btn_block">
+                                    <div class="col-xs-10 col-sm-10 submit_btn">
+                                        <button type="submit" class="btn btn-default"><img src="public/img/login_img.png" alt="">Создать рабочее место</button>
+                                    </div>
+                                </div>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--            End of content block-->
+
+        <!--        Footer-->
+        <div class="footer_bg">
+            <div class="container">
+                <div class="row clearfix footer">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 column">
+                        <nav role="navigation" class="nav navbar navbar-default nav_footer">
+                            <div class="container-fluid">
+                                <ul class="nav navbar-nav nav_footer_menu">
+                                    <li><a href="oferta.html">Оферта</a></li>
+                                    <li><a href="#">Реклама</a></li>                    
+                                    <li><a href="contacts.html">Контакты</a></li>
+                                    <li><a href="#">Правила</a></li>
+                                    <li><a href="#">Помощь</a></li>
+                                </ul>
+                            </div>
+                        </nav>   
+                        <p><a href="http://generalcreative.by" class="general_creative">General Creative</a></p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal window --> 
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <h2>Вход</h2>
+                    <div class="d-header">
+                        <input type="text" placeholder="Введите ваш e-mail"  /><br/>
+                        <input type="password" placeholder="Введите пароль" /> 
+                        <a href="#" class="forgot_pass">Забыли пароль?</a>
+                    </div>
+                    <button class="login">Вход</button>
+                    <p>Или через соцсети</p>
+                    <div class="social_img">
+                        <a href="#"><img src="public/img/social/vk.png" alt="vk"></a>
+                        <a href="#"><img src="public/img/social/facebook.png" alt="facebook"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End of modal window -->  
+
+    </body>
+</html>

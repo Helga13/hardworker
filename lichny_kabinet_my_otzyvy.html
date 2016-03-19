@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Мои отзывы</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!--        <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+<!--        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=cyrillic,latin' rel='stylesheet'>-->
+
+        <link rel="stylesheet" href="public/select2/dist/css/select2.css">
+        <link rel="stylesheet" href="public/jquery-simple-slider/css/simple-slider.css">
+        <link rel="stylesheet" href="public/jquery-ui-datapicker/jquery-ui.css">
+        <link rel="stylesheet" href="public/jquery-ui-datapicker/jquery-ui.theme.css">
+        <link rel="stylesheet" href="public/lightbox/dist/ekko-lightbox.css">
+        <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="public/stylesheets/style.css">
+
+        <script src="public/javascripts/jquery-1.11.2.min.js"></script>
+        <script src="public/select2/dist/js/select2.js"></script>
+        <script src="public/jquery-ui-datapicker/jquery-ui.js"></script>  
+        <script src="public/jquery-simple-slider/js/simple-slider.js"></script>
+        <script src="public/lightbox/dist/ekko-lightbox.js"></script>
+        <script src="public/jquery-validation-1.13.1/dist/jquery.validate.js"></script>
+        <script src="public/jquery-validation-1.13.1/dist/additional-methods.js"></script>
+        <script src="public/bootstrap/js/bootstrap.min.js"></script>
+        <script src="public/javascripts/index.js"></script>
+
+    </head>
+
+
+    <body>
+        <div class="header_bg">
+            <div class="container header">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 column header">
+                        <div class="before_header_all">
+
+                            <div class="before_header message_btn">
+                                <a class="message" href="#" ><img src="public/img/lichny_kabinet/message.png" alt="messages">Сообщения</a>
+                            </div>
+
+                            <div class="before_header personal_cabinet_btn dropdown">
+                                <a href="#" class="dropdown-toggle personal_cabinet" data-toggle="dropdown"><img src="public/img/lichny_kabinet/lichny_kabinet.png" alt="lichny_kabinet">Личный кабинет</a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <div class="count_dropdown"><a href="#">99+</a></div><div class="list_dropdown"><a href="#">Мои сообщения</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="count_dropdown"></div><div class="list_dropdown"><a href="lichny_kabinet_my_projects.html">Мои проекты</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="count_dropdown"></div><div class="list_dropdown"><a href="lichny_kabinet_my_zayavki.html">Мои заявки</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="count_dropdown"></div><div class="list_dropdown"><a href="lichny_kabinet.html">Мой профиль</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="count_dropdown"></div><div class="list_dropdown"><a href="lichny_kabinet_izbrannoe.html">Избранное</a></div>
+                                    </li>
+                                </ul>
+                            </div> 
+                            <div class="before_header logout_btn">
+                                <a href="#" class="logout"><img src="public/img/lichny_kabinet/log_out.png" alt="logout">Выйти</a>
+                            </div>   
+
+                        </div>
+
+                        <nav class="nav navbar navbar-default" role="navigation">
+                            <!--                            <div class="container-fluid">-->
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="public/img/logo.png" alt="logo">
+                                    <h1>Трудоголик</h1>
+                                </a>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav nav-pills nav-justified">
+                                    <li><a href="#">Дать объявление</a></li>
+                                    <li><a href="#">Найти работу</a></li>                    
+                                    <li><a href="#">Как это работает</a></li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                            <!--                            </div>-->
+                        </nav>               
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <!--            Content block-->
+
+        <div class="container content">
+            <div class="row clearfix">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 column content_block">
+                    <h4>ЛИЧНЫЙ КАБИНЕТ</h4> 
+                </div>
+            </div>
+            <div class="row clearfix personal_cabinet">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 column left_column">
+                    <div class="userpic prof_userpic">
+                        <a href="#"><img src="public/img/lichny_kabinet/prof_userpic.png" alt="username"></a>
+                    </div>		
+
+                    <div class="row clearfix data_info">
+                        <div class="prof_list"><a href="lichny_kabinet.html">Мой профиль</a></div>
+                        <div class="prof_label"><a href="#" target="_blank" class="quantity">ред.</a></div>
+                    </div>
+                    <div class="row clearfix data_info">
+                        <div class="prof_list"><a href="dialogs.html">Мои сообщения</a></div>
+                        <div class="prof_label count"><a href="#">99+</a></div>
+                    </div> 
+                    <div class="row clearfix data_info">
+                        <div class="prof_list"><a href="lichny_kabinet_my_projects.html">Мои проекты</a></div>
+                        <div class="prof_label"></div>
+                    </div>
+                    <div class="row clearfix data_info">
+                        <div class="prof_list"><a href="lichny_kabinet_my_zayavki.html">Мои заявки</a></div>
+                        <div class="prof_label"></div>
+                    </div>
+                    <div class="row clearfix data_info">
+                        <div class="prof_list"><a href="lichny_kabinet_izbrannoe.html">Избранное</a></div>
+                        <div class="prof_label count"><a href="#">4</a></div>
+                    </div>
+                    <div class="row clearfix data_info">
+                        <div class="prof_list"><a href="lichny_kabinet_my_otzyvy.html" class="active">Отзывы</a></div>
+                        <div class="prof_label">
+                            <img src="public/img/lichny_kabinet/voices_yes.png" alt="voices_yes"/>
+                            <a href="#" target="_blank" class="quantity">99</a>&nbsp;<span>/</span>
+                            <img src="public/img/lichny_kabinet/voices_no.png" alt="voices_no"/>
+                            <a href="#" target="_blank" class="quantity">99</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 column"> 
+                    <div class="main_column_my_testimonials">
+                        <div class="my_testimonials">
+                            <p>МОИ ОТЗЫВЫ</p>
+                        </div>
+                        <div class="testimonial_preview_block">
+                            <a href="#" class="user_name_testimonial">Вероника Клопова</a>
+                            <div class="preview preview_my_otzyvy">
+                                <div class="userpic_container">
+                                    <div class="userpic">
+                                        <a href="#"><img src="public/img/userpic_1.png" alt="username"></a>
+                                    </div>
+                                </div>
+                                <div class="text text_my_otzyvy">
+                                    <h5>НОРМ</h5>
+                                    <p>Всем привет. Расскажу немного о моем белом P7.
+                                        Пользуюсь где то месяц. Телефон супер. Дизайн очень крутой, но без чехла его не ношу, боюсь выронить. Очень быстрый.  <a href="#" target="_blank">Подробнее</a></p>
+                                    <time datetime="2015-04-07">07.04.2015 15:01:33</time>
+                                    <img src="public/img/lichny_kabinet/voices_yes.png" alt="voices_yes"/>
+                                </div>
+                                <a href="#" class="positive_feedback"></a>
+                            </div>
+                        </div>
+
+                        <div class="testimonial_preview_block">
+                            <a href="#" class="user_name_testimonial">Вероника Клопова</a>
+                            <div class="preview preview_my_otzyvy">
+                                <div class="userpic_container">
+                                    <div class="userpic">
+                                        <a href="#"><img src="public/img/userpic_1.png" alt="username"></a>
+                                    </div>
+                                </div>
+                                <div class="text text_my_otzyvy">
+                                    <h5>НОРМ</h5>
+                                    <p>Всем привет. Расскажу немного о моем белом P7.
+                                        Пользуюсь где то месяц. Телефон супер. Дизайн очень крутой, но без чехла его не ношу, боюсь выронить. Очень быстрый.  <a href="#" target="_blank">Подробнее</a></p>
+                                    <time datetime="2015-04-07">07.04.2015 15:01:33</time>
+                                    <img src="public/img/lichny_kabinet/voices_yes.png" alt="voices_yes"/>
+                                </div>
+                                <a href="#" class="positive_feedback"></a>
+                            </div>
+                        </div>
+
+                        <div class="testimonial_preview_block">
+                            <a href="#" class="user_name_testimonial">Вероника Клопова</a>
+                            <div class="preview preview_my_otzyvy">
+                                <div class="userpic_container">
+                                    <div class="userpic">
+                                        <a href="#"><img src="public/img/userpic_1.png" alt="username"></a>
+                                    </div>
+                                </div>
+                                <div class="text text_my_otzyvy">
+                                    <h5>НОРМ</h5>
+                                    <p>Всем привет. Расскажу немного о моем белом P7.
+                                        Пользуюсь где то месяц. Телефон супер. Дизайн очень крутой, но без чехла его не ношу, боюсь выронить. Очень быстрый.  <a href="#" target="_blank">Подробнее</a></p>
+                                    <time datetime="2015-04-07">07.04.2015 15:01:33</time>
+                                    <img src="public/img/lichny_kabinet/voices_yes.png" alt="voices_yes"/>
+                                </div>
+                                <a href="#" class="positive_feedback"></a>
+                            </div>
+                        </div>
+
+                        <div class="testimonial_preview_block">
+                            <a href="#" class="user_name_testimonial">Владимир Ильич</a>
+                            <div class="preview preview_my_otzyvy">
+                                <div class="userpic_container">
+                                    <div class="userpic">
+                                        <a href="#"><img src="public/img/userpic_1.png" alt="username"></a>
+                                    </div>
+                                </div>
+                                <div class="text text_my_otzyvy">
+                                    <h5>НЕ СОВЕТУЮ</h5>
+                                    <p>Имел несчастье купить сразу два таких аппарата. Поэтому могу судить обьективно. Динамики хрипят у обоих, камера от силы 3 Мп тянет, глюки и зависания, на солнце ничего не видно на экране, жаль потраченных денег и времени. <a href="#" target="_blank">Подробнее</a></p>
+                                    <time datetime="2015-04-07">07.04.2015 15:01:33</time>
+                                    <img src="public/img/lichny_kabinet/voices_no.png" alt="voices_no"/>
+                                </div>
+                                <a href="#" class="negative_feedback"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--            End of content block-->
+
+        <!--        Footer-->
+        <div class="footer_bg">
+            <div class="container">
+                <div class="row clearfix footer">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 column">
+                        <nav role="navigation" class="nav navbar navbar-default nav_footer">
+                            <div class="container-fluid">
+                                <ul class="nav navbar-nav nav_footer_menu">
+                                    <li><a href="oferta.html">Оферта</a></li>
+                                    <li><a href="#">Реклама</a></li>                    
+                                    <li><a href="contacts.html">Контакты</a></li>
+                                    <li><a href="#">Правила</a></li>
+                                    <li><a href="#">Помощь</a></li>
+                                </ul>
+                            </div>
+                        </nav>   
+                        <p><a href="http://generalcreative.by" class="general_creative">General Creative</a></p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
